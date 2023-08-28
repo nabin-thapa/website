@@ -1,41 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personle Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="hero">
-        <nav>
-            <img src="nabinlogo.png" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>                                                           
-            </ul>
-        </nav>
-        <div class="detel">
-            <h1>I,M NABIN  <span>THAPA</span></h1>
-            <p>This is my official Portfolio website to showcase my 
-                all works related to <br> web development and ui design. </p>
-            <a href="#">Downdload CV</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nabin Thapa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nabin Thapa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="images">
-            <img src="images/shape.png" class="shape">
-            <img src="NABIN.png" class="my photo">
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="370229490_290871306870299_8720603677801166267_n.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nabin Thapa</h1>
+        <p class="section__text__p2">BCA STUDENT</p>
+        <div class="btn-container">
+          <button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin (1).png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nabin-thapa-283632263/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nabin-thapa'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="370284318_311555051366505_5760438115287022928_n.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+            <div class="details-container">
+              <img
+                src="education (1).png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> +2 at vidhyodaya shishu sadan. <br>went to madan bhandari memorial college for  Bca Degree.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My name is Nabin Thapa and i am from gauradaha, jhapa, nepal. Right now i'm studying in new baneshor, kathmandu, nepal, at madan bhandari memorial college. <br>
+<br>
+<p style="font-style: oblique;">my permanent Address </p>
 
-        <div class="social">
-           <a href=""><i class="fab fa-instagram"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100061180595584"><i class="fab fa-facebook"></i></a>
-           
+
+Address
+:
+Gauradaha , jhapa, Nepal
+<br>
+Phone No
+:
+9817934130
+<br>
+Email ID
+:
+thapanabin455@gmail.com
+            </p>
+          </div>
+      </div>
+    
+    </section>
+    
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email (1).png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:thapanabin455@gmail.com">thapanabin455@gmai.com</a></p>
         </div>
-    </div>
-</body>
+        <div class="contact-info-container">
+          <img
+            src="linkedin (1).png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nabin-thapa-283632263/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 NabinThapa. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
