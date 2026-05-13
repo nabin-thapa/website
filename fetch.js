@@ -1,0 +1,1 @@
+fetch('https://api.github.com/users/nabin-thapa/repos').then(r=>r.json()).then(d=>console.log(JSON.stringify(d.map(r=>({name:r.name, description:r.description, url:r.html_url, language:r.language})), null, 2))).catch(console.error);
